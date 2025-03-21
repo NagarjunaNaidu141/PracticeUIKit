@@ -10,11 +10,11 @@ import UIKit
 class UIPickerViewViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
 //    let brand = ["tata","toyato","honda","maruti"]
 //    let cars = ["tata":["nexon","punch","Harrier","alto"],"toyato":["fortuner","innova","crusier","corolla"],"honda":["civic","crv","accent","crz"],"maruti":["swift","suzuki","alto","santro"]]
-    let brands = ["Toyota", "Ford", "Honda"]
+    let brands = ["Toyota", "Ford", "Honda","nagarajn"]
     let models = [
         "Toyota": ["Camry", "Corolla", "Prius"],
         "Ford": ["Focus", "Fiesta", "Mustang"],
-        "Honda": ["Civic", "Accord", "Fit"]
+        "Honda": ["Civic", "Accord", "Fit"],"nagarajn": nil
     ]
     @IBOutlet weak var labelText: UILabel!
     var selectedBrand = "Toyota"
@@ -35,7 +35,7 @@ class UIPickerViewViewController: UIViewController, UIPickerViewDataSource, UIPi
                 if component == 0{
                     return brands.count
                 }else{
-                    return models[selectedBrand]?.count ?? 0
+                    return models[selectedBrand]??.count ?? 0
                 }
             }
         
@@ -43,7 +43,7 @@ class UIPickerViewViewController: UIViewController, UIPickerViewDataSource, UIPi
                 if component == 0{
                     return brands[row]
                 }else{
-                    return models[selectedBrand]?[row]
+                    return models[selectedBrand]??[row]
                 }
             }
             public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -54,7 +54,7 @@ class UIPickerViewViewController: UIViewController, UIPickerViewDataSource, UIPi
                     
                 }
                 let selectedModelIndex = pickerView.selectedRow(inComponent: 1)
-                let selectedModel = models[selectedBrand]?[selectedModelIndex] ?? "No Model Selected"
+                let selectedModel = models[selectedBrand]??[selectedModelIndex] ?? "No Model Selected"
                         print("Selected Brand: \(selectedBrand), Model: \(selectedModel)")
                 labelText.text = "Selected Brand: \(selectedBrand), Model: \(selectedModel)"
                     }
