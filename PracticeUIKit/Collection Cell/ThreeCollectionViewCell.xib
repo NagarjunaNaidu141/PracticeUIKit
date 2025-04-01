@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThreeCollectionViewCell" id="gTV-IL-0wX" customClass="ThreeCollectionViewCell" customModule="PracticeUIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="269"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="269"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvH-Rq-bdO">
+                        <rect key="frame" x="5" y="243" width="308" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b2g-AB-FbU">
+                        <rect key="frame" x="10" y="5" width="298" height="233"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="FvH-Rq-bdO" firstAttribute="top" secondItem="b2g-AB-FbU" secondAttribute="bottom" constant="5" id="1Gy-HK-qPc"/>
+                <constraint firstItem="b2g-AB-FbU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ICa-Jb-iVO"/>
+                <constraint firstItem="b2g-AB-FbU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="JF9-pD-Tfb"/>
+                <constraint firstItem="FvH-Rq-bdO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="N0y-yN-Sjx"/>
+                <constraint firstAttribute="trailing" secondItem="FvH-Rq-bdO" secondAttribute="trailing" constant="5" id="Qbk-bH-YuH"/>
+                <constraint firstItem="b2g-AB-FbU" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="VY5-MW-ZbL"/>
+                <constraint firstAttribute="trailing" secondItem="b2g-AB-FbU" secondAttribute="trailing" constant="10" id="VjH-wX-Gma"/>
+                <constraint firstAttribute="bottom" secondItem="FvH-Rq-bdO" secondAttribute="bottom" constant="5" id="uOp-zL-AE8"/>
+                <constraint firstItem="FvH-Rq-bdO" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="xGz-66-Te1"/>
+            </constraints>
+            <size key="customSize" width="318" height="269"/>
+            <connections>
+                <outlet property="imageView" destination="b2g-AB-FbU" id="fDE-Fi-HC5"/>
+                <outlet property="labelText" destination="FvH-Rq-bdO" id="oen-tH-S54"/>
+            </connections>
+            <point key="canvasLocation" x="198.47328244274809" y="96.83098591549296"/>
+        </collectionViewCell>
+    </objects>
+</document>
