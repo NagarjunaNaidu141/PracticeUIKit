@@ -1,20 +1,19 @@
 //
 //  AppDelegate.swift
-//  PracticeUIKit
+//  UIScrollView
 //
-//  Created by Nagarjuna Naidu on 21/03/25.
+//  Created by Nagarjuna Naidu on 01/04/25.
 //
 
 import UIKit
 
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        UITabBar.appearance().tintColor = .red
-        UITabBar.appearance().barTintColor = .white
         return true
     }
 
