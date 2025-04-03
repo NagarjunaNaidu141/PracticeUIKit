@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LanguageChangeVCDelegate: UIViewController {
+class LanguageChangeViewController: UIViewController {
     var delegate: LanguageChangeDelegate?
 
     override func viewDidLoad() {
@@ -18,18 +18,18 @@ class LanguageChangeVCDelegate: UIViewController {
     
 
     @IBAction func frenchLanguage(_ sender: UIButton) {
-        delegate.languageChanged(index: 0)
+        delegate?.languageChanged(index: 0)
         
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func englishLanguage(_ sender: UIButton) {
-        delegate.languageChanged(index: 1)
+        delegate?.languageChanged(index: 1)
         
         dismiss(animated: true, completion: nil)
     }
     @IBAction func teluguLanguague(_ sender: UIButton) {
-        delegate.languageChanged(index: 0)
+        delegate?.languageChanged(index: 2)
         
         dismiss(animated: true, completion: nil)
     }
