@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		C6048EF62DA04ADC00E263E8 /* PlantApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = PlantApp.xcodeproj; sourceTree = "<group>"; };
+		C6048F052DA04ADC00E263E8 /* UIScrollView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = UIScrollView.xcodeproj; sourceTree = "<group>"; };
 		C69661EA2D8D053400508390 /* PracticeUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CF453A2DA0B8AB004EF259 /* PlantApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = PlantApp.xcodeproj; sourceTree = "<group>"; };
+		C6CF45492DA0B8AB004EF259 /* UIScrollView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = UIScrollView.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -42,6 +46,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6048F182DA04ADC00E263E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6048F1A2DA04ADC00E263E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C69661E12D8D053400508390 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +72,20 @@
 			isa = PBXGroup;
 			children = (
 				C69661EA2D8D053400508390 /* PracticeUIKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6CF455C2DA0B8AB004EF259 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6CF455E2DA0B8AB004EF259 /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +142,24 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C69661EB2D8D053400508390 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C6CF455C2DA0B8AB004EF259 /* Products */;
+					ProjectRef = C6CF453A2DA0B8AB004EF259 /* PlantApp.xcodeproj */;
+				},
+				{
+					ProductGroup = C6048F1A2DA04ADC00E263E8 /* Products */;
+					ProjectRef = C6048EF62DA04ADC00E263E8 /* PlantApp.xcodeproj */;
+				},
+				{
+					ProductGroup = C6048F182DA04ADC00E263E8 /* Products */;
+					ProjectRef = C6048F052DA04ADC00E263E8 /* UIScrollView.xcodeproj */;
+				},
+				{
+					ProductGroup = C6CF455E2DA0B8AB004EF259 /* Products */;
+					ProjectRef = C6CF45492DA0B8AB004EF259 /* UIScrollView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C69661E92D8D053400508390 /* PracticeUIKit */,
